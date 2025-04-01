@@ -69,7 +69,7 @@ GitHub and GitHub Actions were used throughout the creation of my app, DailyMeal
 
 (Insider Engineering, 2025).
 
-
+Link to GitHub Repository: 
 https://github.com/ST10494934/DailyMeal-App
 
 
