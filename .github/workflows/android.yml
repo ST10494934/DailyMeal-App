@@ -1,27 +1,23 @@
-name: DailyMeal CI
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
 jobs:
   test:
+    name: Run Unit Tests
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
+          distribution: 'zulu'
           java-version: '17'
 
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
 
+      - name: Grant execute permission for Gradlew
+        run: chmod +x gradlew
+
       - name: Run Unit Tests
-        run: ./gradlew test
+        run: ./gradlew testDebugUnitTest
