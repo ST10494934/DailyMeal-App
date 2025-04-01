@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="DailyMeal - Meal Suggestion App"
+        android:textColor="@color/textPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-100dp"/>
+
+    <TextView
+        android:id="@+id/txtTimeOfDayPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available times of day: Morning, Mid-morning, Afternoon, Mid-afternoon, Dinner, After Dinner Snack"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="-10dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/edtTimeOfDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter time of day (e.g., Morning)"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="-10dp"/>
+
+    <Button
+        android:id="@+id/btnSuggestMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggest Meal 🍽️"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset 🔄"
+        android:backgroundTint="@color/resetButtonColor"
+        android:textColor="@color/white"
+        android:layout_marginTop="-10dp"/>
+
+    <TextView
+        android:id="@+id/txtMealSuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/textPrimary"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
