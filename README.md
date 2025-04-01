@@ -67,8 +67,8 @@ GitHub and GitHub Actions were used throughout the creation of my app, DailyMeal
 
 -During the programming of my application, I made use of GitHub Actions to automate important steps, such as automated checks, which helped catch any issues early on in the programming process and resolve them, thus improving the reliability of my app.
 
+(Insider Engineering, 2025).
 
-Link to GitHub Repository: 
 
 https://github.com/ST10494934/DailyMeal-App
 
