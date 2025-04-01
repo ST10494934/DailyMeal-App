@@ -110,7 +110,7 @@ Bibliography
 1.	Big Oh Tech. (2025). Develop an Android Application with Kotlin. [online] Available at: https://bigohtech.com/develop-an-android-application-with-kotlin/ [Accessed 28 March 2025].
 2.	Easy Tuto. (2023). Simple Kotlin App | Android Studio | 2024. [online] Available at: https://youtu.be/XLt_moCoauw?si=AEzJBnosKG2Iq4GZ [Accessed 28 March 2025].
 3.	HotchkissPDX. (2025). Meal Plan App. [online] Available at: https://github.com/HotchkissPDX/meal-plan-app [Accessed 28 March 2025].
-4.	Insider Engineering. (2025). What is GitHub Actions? Workflows. [online] Available at: [Accessed 30 March 2025].
+4.	Insider Engineering. (2025). What is GitHub Actions? Workflows. [online] Available at:https://medium.com/insiderengineering/what-is-github-actions-workflows-f373d9037981 [Accessed 30 March 2025].
 5.	Philipp Lackner. (2020). Build A Simple Android App With Kotlin. [online] Available at: https://youtu.be/BBWyXo-3JGQ?si=glxEPlcLqkUXlw3C [Accessed 28 March 2025].
 
 
