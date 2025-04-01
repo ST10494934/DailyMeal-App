@@ -44,6 +44,18 @@ class MainActivity : ComponentActivity() {
             edtTimeOfDay.text.clear()
             txtMealSuggestion.text = ""
             Log.d("MealSuggestion", "Reset button clicked - Input cleared")
+
+            // Food Battle Mini-Game
+            btnFoodBattle.setOnClickListener {
+                val foods = listOf("🍕 Pizza", "🥗 Salad", "🍔 Burger", "🍣 Sushi", "🌮 Taco", "🍩 Donut")
+                val food1 = foods[Random.nextInt(foods.size)]
+                val food2 = foods[Random.nextInt(foods.size)]
+
+                val winner = if (Random.nextBoolean()) food1 else food2
+
+                txtBattleResult.text = "Food Battle: $food1 vs. $food2 \n Winner: $winner! 🏆"
+                Log.d("FoodBattle", "Food Battle: $food1 vs. $food2, Winner: $winner")
+            }
         }
     }
-}
+
