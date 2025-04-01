@@ -9,7 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="backgroundColor">#E3F2FD</color>
-    <color name="buttonColor">#FF6200EE</color>
+    <color name="buttonColor1">#FF6200EE</color>
+    <color name="buttonColor2">#FFBB86FC</color>
     <color name="resetButtonColor">#FF018786</color>
     <color name="textPrimary">#FF000000</color>
 

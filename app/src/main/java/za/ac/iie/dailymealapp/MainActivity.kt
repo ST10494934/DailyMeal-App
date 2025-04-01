@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.ComponentActivity
+import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,8 @@ class MainActivity : ComponentActivity() {
         val txtMealSuggestion = findViewById<TextView>(R.id.txtMealSuggestion)
         val btnSuggestMeal = findViewById<Button>(R.id.btnSuggestMeal)
         val btnReset = findViewById<Button>(R.id.btnReset)
-        val txtTimeOfDayPrompt = findViewById<TextView>(R.id.txtTimeOfDayPrompt)
+        val btnFoodBattle = findViewById<Button>(R.id.btnFoodBattle)
+        val txtBattleResult = findViewById<TextView>(R.id.txtBattleResult)
 
         // Button Click Listener for Meal Suggestion
         btnSuggestMeal.setOnClickListener {
@@ -26,7 +28,7 @@ class MainActivity : ComponentActivity() {
             // Meal Suggestion Logic
             val mealSuggestion = when (timeOfDay) {
                 "morning" -> "🥞 Pancakes"
-                "mid-morning" -> "🥗 Fresh Fruits "
+                "mid-morning" -> "🥗 Fresh Fruits"
                 "afternoon" -> "🥪 Chicken Sandwich"
                 "mid-afternoon" -> "🍰 A Slice of Cake"
                 "dinner" -> "🍝 Pasta"
@@ -43,19 +45,20 @@ class MainActivity : ComponentActivity() {
         btnReset.setOnClickListener {
             edtTimeOfDay.text.clear()
             txtMealSuggestion.text = ""
+            txtBattleResult.text = ""  // Also clear food battle result
             Log.d("MealSuggestion", "Reset button clicked - Input cleared")
+        }
 
-            // Food Battle Mini-Game
-            btnFoodBattle.setOnClickListener {
-                val foods = listOf("🍕 Pizza", "🥗 Salad", "🍔 Burger", "🍣 Sushi", "🌮 Taco", "🍩 Donut")
-                val food1 = foods[Random.nextInt(foods.size)]
-                val food2 = foods[Random.nextInt(foods.size)]
+        // Food Battle Mini-Game
+        btnFoodBattle.setOnClickListener {
+            val foods = listOf("🍕 Pizza", "🥗 Salad", "🍔 Burger", "🍣 Sushi", "🌮 Taco", "🍩 Donut")
+            val food1 = foods[Random.nextInt(foods.size)]
+            val food2 = foods[Random.nextInt(foods.size)]
 
-                val winner = if (Random.nextBoolean()) food1 else food2
+            val winner = if (Random.nextBoolean()) food1 else food2
 
-                txtBattleResult.text = "Food Battle: $food1 vs. $food2 \n Winner: $winner! 🏆"
-                Log.d("FoodBattle", "Food Battle: $food1 vs. $food2, Winner: $winner")
-            }
+            txtBattleResult.text = "Food Battle: $food1 vs. $food2 \n Winner: $winner! 🏆"
+            Log.d("FoodBattle", "Food Battle: $food1 vs. $food2, Winner: $winner")
         }
     }
-
+}
